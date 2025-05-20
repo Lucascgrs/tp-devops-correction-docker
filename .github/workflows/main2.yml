@@ -22,14 +22,6 @@ jobs:
           cd simple-api
           mvn clean verify
 
-      - name: Run SonarCloud analysis
-        run: mvn -B verify sonar:sonar \
-          -Dsonar.projectKey=TON_PROJECT_KEY \
-          -Dsonar.organization=TON_ORGANIZATION \
-          -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
-          --file ./simple-api/pom.xml
-
   build-and-push-docker-image:
     needs: test-backend
     runs-on: ubuntu-24.04
