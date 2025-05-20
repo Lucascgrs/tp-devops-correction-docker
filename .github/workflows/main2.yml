@@ -18,7 +18,9 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
       - name: Build and test with Maven
-        run: mvn clean verify
+        run: |
+          cd simple-api
+          mvn clean verify
 
   build-and-push-docker-image:
     needs: test-backend
