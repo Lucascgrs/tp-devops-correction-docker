@@ -19,3 +19,9 @@ It permit to publish images only if the quality code is sufficient and the compi
 2-4 For what purpose do we need to push docker images?
 Pushing a Docker image makes the application easily deployable and shareable across environments without rebuilding.
 It enables versioning, supports Continuous Delivery, and is essential for deployment automation.
+
+
+
+
+link to the TP 3 repository : 
+https://github.com/Lucascgrs/ansible_lcongras
